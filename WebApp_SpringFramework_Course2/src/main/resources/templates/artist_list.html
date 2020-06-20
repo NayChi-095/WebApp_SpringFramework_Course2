@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>WebApp Course 2 Spring Framework5</title>
+</head>
+<body>
+<h1>Artist List</h1>
+<table>
+	<tr>
+		<td>Id</td>
+		<td>First Name</td>
+		<td>Last Name</td>
+	</tr>
+	<tr th:each="artist: ${artists}">
+		<td th:text="${artist.id}">1</td>
+		<td th:text="${artist.firstName}">Taylor</td>
+		<td th:text="${artist.lastName}">Swift</td>
+	</tr>
+
+</table>
+
+</body>
+</html>
