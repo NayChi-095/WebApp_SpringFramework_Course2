@@ -13,7 +13,7 @@ private final AlbumRepository albumRepository;
 	public AlbumController(AlbumRepository albumRepository) {
 		this.albumRepository = albumRepository;
 	}
-
+//test
 //	@RequestMapping("/albums")
 	public String getBooks(Model model) {
 		model.addAttribute("albums",albumRepository.findAll());
